@@ -1,0 +1,15 @@
+.navbar {
+  @apply flex w-full justify-between items-center;
+
+  &__item {
+    @apply text-bego_ligtherGray cursor-pointer duration-200 font-thin hover:text-bego__white;
+
+    &--active {
+      @apply font-semibold text-bego__yellow;
+      &::after {
+        @apply block w-1/3 h-[2px] bg-bego__yellow;
+        content: '';
+      }
+    }
+  }
+}

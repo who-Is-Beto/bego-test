@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  @apply box-border outline-none m-0 p-0 text-bego__white font-bego;
+}
+
+body {
+  @apply min-h-screen bg-bego__darkBlack;
+}

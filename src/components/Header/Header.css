@@ -1,0 +1,23 @@
+.header__icons {
+  @apply w-6 h-6 cursor-pointer duration-200 hover:opacity-50 active:scale-75;
+
+  &__img {
+    @apply w-full h-full;
+  }
+}
+
+.header {
+  @apply font-extrabold h-20 w-full flex items-center justify-between;
+
+  &__back {
+    @apply header__icons;
+  }
+
+  &__bell {
+    @apply header__icons;
+  }
+
+  &__title {
+    @apply text-lg;
+  }
+}

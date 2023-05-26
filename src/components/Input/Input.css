@@ -1,0 +1,14 @@
+.input {
+  @apply relative origin-bottom-left;
+
+  &__field {
+    @apply relative bg-transparent border-b-[1px] border-bego__darkerGray p-2 w-full;
+
+    &::placeholder {
+      @apply text-bego__darkGray capitalize;
+    }
+  }
+  &__icon {
+    @apply absolute top-1;
+  }
+}
