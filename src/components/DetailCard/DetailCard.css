@@ -1,0 +1,28 @@
+.card {
+  &__details {
+    &__body {
+      @apply px-4 py-8 flex flex-col gap-8;
+
+      &::before {
+        @apply absolute bg-gradient-to-b p-[1px/2] from-bego_ligtherGray to-transparent;
+        content: '';
+        height: 3rem;
+        width: 1px;
+        top: 66%;
+        transform: translateY(-50%);
+        left: 2.25rem;
+      }
+    }
+    &__header {
+      @apply p-4;
+
+      &__reference {
+        @apply text-bego__white;
+      }
+    }
+
+    &__body {
+      @apply p-4;
+    }
+  }
+}
