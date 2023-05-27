@@ -1,7 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit';
 // import { IStore, TIncomingTime } from "shimps";
 
-const initialState: Store = {};
+const initialState = {};
 
 const appSlice = createSlice({
   name: 'app',
