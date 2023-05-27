@@ -1,0 +1,13 @@
+.order-stephs {
+  &__details {
+    @apply flex gap-6 items-center justify-start;
+
+    &__icon {
+      @apply relative w-10 h-10 border-2 border-bego__darkBlack rounded-full p-1;
+
+      &__bg {
+        @apply absolute z-0  bg-bego__yellow w-10 h-10 border-2 rounded-full border-bego__darkBlack;
+      }
+    }
+  }
+}

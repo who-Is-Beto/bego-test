@@ -1,0 +1,27 @@
+.order-stephs {
+  @apply flex items-center justify-between gap-4 h-14;
+
+  &__icon {
+    @apply h-6 w-7;
+  }
+
+  &__content {
+    @apply flex-col;
+
+    &__steph {
+      @apply text-[10px] text-bego__darkGray;
+    }
+
+    &__adress {
+      @apply text-ellipsis overflow-hidden h-3  leading-3 text-xs text-bego_ligtherGray w-11/12;
+    }
+  }
+
+  &__date {
+    @apply grid;
+
+    &__text {
+      @apply text-xs text-bego__darkGray;
+    }
+  }
+}

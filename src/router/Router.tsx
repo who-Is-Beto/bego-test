@@ -4,6 +4,7 @@ import Header from '../components/Header';
 import Upcoming from '../Views/Upcoming';
 import Completed from '../Views/Completed';
 import Past from '../Views/Past';
+import Detail from '@/Views/Detail';
 
 const Router: React.FC = (): JSX.Element => {
   return (
@@ -16,6 +17,7 @@ const Router: React.FC = (): JSX.Element => {
             <Route path="/upcoming" element={<Upcoming />} />
             <Route path="/completed" element={<Completed />} />
             <Route path="/past" element={<Past />} />
+            <Route path="/order/:id" element={<Detail />} />
             {/* <Route path="/country/:code" element={<Country />} /> */}
           </Switch>
         </div>

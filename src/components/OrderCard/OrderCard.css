@@ -1,0 +1,67 @@
+.card {
+  @apply max-w-xl z-0 relative bg-gradient-to-bl p-[1px] rounded-2xl from-bego__lightBlack to-bego__darkGray;
+
+  &__content {
+    @apply relative z-10 bg-bego__lightBlack rounded-2xl;
+
+    &__header {
+      @apply p-5 border-b-[1px] border-bego__darkerGray flex items-center justify-between h-8;
+
+      &__type {
+        @apply flex gap-2 text-sm;
+
+        &__icon {
+          @apply w-6 h-6;
+        }
+      }
+
+      &__status {
+        @apply flex items-center justify-center gap-2 text-[10px] max-w-sm;
+
+        &__dot {
+          &--inactive {
+            @apply w-2 h-2 rounded-full bg-bego__lightGray;
+          }
+
+          &--active {
+            @apply w-2 h-2 rounded-full bg-bego__blue;
+          }
+        }
+      }
+    }
+
+    &__body {
+      @apply px-4 py-8 flex flex-col gap-8;
+
+      &::before {
+        @apply absolute bg-gradient-to-b p-[1px/2] from-bego_ligtherGray to-transparent;
+        content: '';
+        height: 3rem;
+        width: 1px;
+        top: 54%;
+        transform: translateY(-50%);
+        left: 1.6rem;
+      }
+    }
+
+    &__footer {
+      @apply flex items-end justify-between h-12 gap-4;
+    }
+  }
+
+  &__wrapper {
+    @apply grid gap-4;
+  }
+
+  &__order {
+    @apply col-span-1;
+
+    &__text {
+      @apply text-bego_ligtherGray;
+    }
+
+    &__number {
+      @apply text-bego__white font-bold;
+    }
+  }
+}

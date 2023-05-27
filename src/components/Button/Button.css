@@ -1,0 +1,17 @@
+.button {
+  @apply w-full p-3 text-xs rounded-2xl flex gap-2 justify-center text-center cursor-pointer duration-200 hover:tracking-wide;
+
+  &--primary {
+    @apply bg-bego__yellow text-bego__darkBlack duration-200 hover:tracking-wide active:scale-75 font-extrabold;
+  }
+
+  &--secondary {
+    @apply bg-gradient-to-r from-bego__darkBlack to-bego__darkerGray;
+  }
+
+  &__border {
+    &--secondary {
+      @apply bg-gradient-to-r p-[1px] rounded-full from-bego__lightBlack via-bego__darkGray to-bego__lightBlack duration-200 hover:tracking-wide active:scale-75;
+    }
+  }
+}
