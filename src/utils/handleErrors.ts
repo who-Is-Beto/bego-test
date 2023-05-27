@@ -6,7 +6,7 @@ export type IResponseAction = (response: any) => PayloadAction<any>;
 export const handleErrors = (
   errors: AxiosError,
   extraErrorsAction: IResponseAction | undefined,
-  body: any,
+  _body: any,
   hideError: boolean,
   dispatch: any,
 ) => {
