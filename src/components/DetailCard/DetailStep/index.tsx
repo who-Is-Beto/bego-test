@@ -1,5 +1,6 @@
 import React, { useMemo } from 'react';
 import './DetailStep.css';
+import { Images } from '@/constants/images';
 
 const DetailStep: React.FC<{ index: number; destination: GetOrdersDestination }> = ({
   destination,
@@ -21,7 +22,7 @@ const DetailStep: React.FC<{ index: number; destination: GetOrdersDestination }>
           <div className="order-stephs__details__icon__bg"></div>
           <img
             className="order-stephs__details__icon"
-            src={`/src/assets/recolección-black.svg`}
+            src={Images.get('back')}
             alt={`order recolección icon`}
           />
         </>

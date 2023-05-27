@@ -1,5 +1,6 @@
 import React from 'react';
 import './Input.css';
+import { Images } from '@/constants/images';
 
 const Input: React.FC<{
   value: string;
@@ -16,7 +17,9 @@ const Input: React.FC<{
   return (
     <label className="input">
       {label}
-      {icon && <img className="input__icon" src={`src/assets/${icon}.svg`} alt={`${icon}`} />}
+      {icon && (
+        <img className="input__icon" src={Images.get(icon.toLocaleLowerCase())} alt={`${icon}`} />
+      )}
       <input
         style={icon ? { paddingLeft: '2.5rem' } : {}}
         className="input__field"

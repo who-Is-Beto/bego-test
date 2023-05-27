@@ -2,6 +2,7 @@ import React, { useMemo } from 'react';
 import './OrderCard.css';
 import OrderStheps from './OrderStephs';
 import Button from '../Button';
+import { Images } from '@/constants/images';
 
 const OrderCard: React.FC<{ order: ResultOrders }> = ({ order }): JSX.Element => {
   const getDate: string = useMemo((): string => {
@@ -29,7 +30,7 @@ const OrderCard: React.FC<{ order: ResultOrders }> = ({ order }): JSX.Element =>
             <div className="card__content__header__type">
               <img
                 className="card__content__header__type__icon"
-                src={`src/assets/${order.type}.svg`}
+                src={Images.get(order.type.toLowerCase())}
                 alt={`${order.type} icon`}
               />
               <span>{order.type}</span>
@@ -63,7 +64,7 @@ const OrderCard: React.FC<{ order: ResultOrders }> = ({ order }): JSX.Element =>
             </div>
             <div className="w-1/3">
               <Button href={`/order/${order.order_number}`} type="primary">
-                Resume <img src="src/assets/eye.svg" alt="eye icon" />
+                Resume <img src={Images.get('eye')} alt="eye icon" />
               </Button>
             </div>
           </footer>

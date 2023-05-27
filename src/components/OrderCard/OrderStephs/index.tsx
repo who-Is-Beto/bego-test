@@ -1,5 +1,6 @@
 import React, { useMemo } from 'react';
 import './OrderStheps.css';
+import { Images } from '@/constants/images';
 
 const OrderStheps: React.FC<{ destination: DestinationOrders }> = ({
   destination,
@@ -20,7 +21,7 @@ const OrderStheps: React.FC<{ destination: DestinationOrders }> = ({
     <div className="order-stephs">
       <img
         className="order-stephs__icon"
-        src={`src/assets/${destination.nickname.toLocaleLowerCase()}.svg`}
+        src={Images.get(destination.nickname.toLowerCase())}
         alt={`order ${destination.nickname} icon`}
       />
 
